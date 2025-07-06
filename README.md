@@ -6,7 +6,7 @@
 ## Demo
 
 <p align="center">
-  <img src="./demo.gif" alt="CalorieSnap Demo" width="300" />
+  <img src="assets/demo.gif" alt="CalorieSnap Demo" width="300" />
 </p>
 
 ## Features
