@@ -54,7 +54,7 @@ function HomePage() {
 
     if (foodName.trim()) {
       requestBody = { food: foodName };
-      apiUrl = 'https://calorie-snap.onrender.com';  // Send to food prediction route
+      apiUrl = 'https://calorie-snap.onrender.com/predict_text';  // Send to food prediction route
       fetchDataToBackend(apiUrl, requestBody);
     } else if (image) {
       // Get the file object from the input
@@ -63,7 +63,7 @@ function HomePage() {
         // Convert the image file to base64
         convertImageToBase64(file, (base64Image) => {
           requestBody = { image: base64Image };  // Send base64 image data to backend
-          apiUrl = 'https://calorie-snap.onrender.com';  // Send to image prediction route
+          apiUrl = 'https://calorie-snap.onrender.com/predict_image';  // Send to image prediction route
 
           // Send the request to the backend with the base64 image data
           fetchDataToBackend(apiUrl, requestBody);
