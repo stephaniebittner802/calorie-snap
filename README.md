@@ -5,7 +5,9 @@
 
 ## Demo
 
-![Digit Recognizer Demo](assets/demo.gif)
+<p align="center">
+  <img src="./demo.gif" alt="CalorieSnap Demo" width="300" />
+</p>
 
 ## Features
 
