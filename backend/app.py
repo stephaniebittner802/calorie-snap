@@ -1,17 +1,23 @@
 from dotenv import load_dotenv
 load_dotenv()
 
+import json
 import os
 import openai
 from openai import OpenAI
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from google.cloud import vision
+from google.oauth2 import service_account
+
 import base64
 
 # Set OpenAI API key
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-vision_client = vision.ImageAnnotatorClient()
+
+creds_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
+credentials = service_account.Credentials.from_service_account_info(json.loads(creds_json))
+vision_client = vision.ImageAnnotatorClient(credentials=credentials)
 
 # Set up Flask
 app = Flask(__name__)
