@@ -3,7 +3,9 @@
 
 **CalorieSnap** is an easy way to check the calories in your food on the go! Whether you are in a restaurant, at home, or shopping for groceries, CalorieSnap lets you instantly estimate the calories of any food by simply snapping a picture or typing its name. It’s your go-to tool for making informed, healthy choices — all within seconds.
 
+## Demo
 
+![Digit Recognizer Demo](assets/demo.gif)
 
 ## Features
 
