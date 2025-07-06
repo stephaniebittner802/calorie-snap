@@ -21,7 +21,7 @@ vision_client = vision.ImageAnnotatorClient(credentials=credentials)
 
 # Set up Flask
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins":"https://exquisite-cat-fc1e21.netlify.app"}})
 
 # Route: Predict from Text
 @app.route("/predict_text", methods=["POST"])
