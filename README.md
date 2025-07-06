@@ -1,7 +1,7 @@
 
 # CalorieSnap
 
-**CalorieSnap** is an easy way to check the calories in your food on the go! Whether you are in a restaurant, at home, or shopping for groceries, CalorieSnap lets you instantly estimate the calories of any food by snapping a picture or typing its name.
+**CalorieSnap** is an easy way to check the calories in your food on the go! Whether you are in a restaurant, at home, or shopping for groceries, CalorieSnap lets you instantly estimate the calories of any food by taking a picture or typing its name. Snap a picture, and see it for yourself!
 
 ## Demo
 
@@ -59,8 +59,6 @@ npm install
 npm start
 ```
 
-- The app will now be running on `http://localhost:3000`.
-
 ### 3. **Backend Setup (Flask)**
 
 - Navigate to the `backend` directory:
@@ -90,8 +88,6 @@ OPENAI_API_KEY=your_openai_api_key
 python app.py
 ```
 
-- The backend will now be running on `http://localhost:5000`.
-
 ### 4. **Google Cloud Vision Setup**
 
 - Sign up for **Google Cloud** and enable the **Vision API**.
@@ -102,15 +98,6 @@ python app.py
 
 - Sign up for **OpenAI** and get your **API key**.
 - Make sure to use **GPT-3.5** or the latest available model for your requests.
-
-### 6. **Testing the App**
-
-1. Open the app in your browser at `http://localhost:3000`.
-2. You can:
-   - Enter a food name (e.g., "Apple Pie") and click **Submit**.
-   - Upload a food image or take a picture using the camera, and click **Submit**.
-3. The app will display the estimated calories and nutritional information for the food item.
-
 
 
 ## **License**
