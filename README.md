@@ -3,7 +3,7 @@
 
 **CalorieSnap** is an easy way to check the calories in your food on the go! Whether you are in a restaurant, at home, or shopping for groceries, CalorieSnap lets you instantly estimate the calories of any food by simply snapping a picture or typing its name. It’s your go-to tool for making informed, healthy choices — all within seconds.
 
----
+
 
 ## Features
 
@@ -11,7 +11,7 @@
 - **AI-Powered**: CalorieSnap uses AI to estimate food calories with impressive accuracy.
 - **Quick Results**: Get results within seconds — perfect for those busy moments when you need to make quick, informed decisions.
 
----
+
 
 ## **Technologies Used**
 - **Frontend**: 
@@ -24,7 +24,7 @@
   - OpenAI GPT-3.5 (for estimating calories and nutritional information)
   - dotenv (for environment variable management)
 
----
+
 
 ## **Setup Instructions**
 
@@ -107,7 +107,7 @@ python app.py
    - Upload a food image or take a picture using the camera, and click **Submit**.
 3. The app will display the estimated calories and nutritional information for the food item.
 
----
+
 
 ## **License**
 
