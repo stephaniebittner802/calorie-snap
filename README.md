@@ -20,13 +20,13 @@
 ## **Technologies Used**
 - **Frontend**: 
   - React.js
-  - React Router (for routing between pages)
   - CSS for styling and transitions
+  - Netlify
 - **Backend**:
   - Flask (Python)
   - Google Cloud Vision API (for object detection)
-  - OpenAI GPT-3.5 (for estimating calories and nutritional information)
-  - dotenv (for environment variable management)
+  - OpenAI API (for estimating calories and nutritional information)
+  - Render
 
 
 
@@ -39,50 +39,29 @@ git clone https://github.com/stephaniebittner802/calorie-snap.git
 cd caloriesnap
 ```
 
-### 2. **Frontend Setup (React)**
-
-- Navigate to the `frontend` directory:
+### 2. **Set up Frontend**
 
 ```bash
 cd frontend
-```
-
-- Install dependencies:
-
-```bash
 npm install
-```
-
-- To start the development server:
-
-```bash
 npm start
 ```
 
-### 3. **Backend Setup (Flask)**
-
-- Navigate to the `backend` directory:
+### 3. **Set up Backend**
 
 ```bash
 cd backend
-```
-
-- Install the required Python dependencies:
-
-```bash
 pip install -r requirements.txt
 ```
 
-- Make sure you have the **Google Cloud Vision API** and **OpenAI API** keys set up in your environment:
-
-1. Create a `.env` file in the `backend` directory with the following:
+Make sure you have the **Google Cloud Vision API** and **OpenAI API** keys set up in your environment. To do this, create a `.env` file in the `backend` directory with the following:
 
 ```env
 GOOGLE_APPLICATION_CREDENTIALS=path_to_your_google_cloud_credentials_json
 OPENAI_API_KEY=your_openai_api_key
 ```
 
-- Run the backend server:
+Run the backend:
 
 ```bash
 python app.py
